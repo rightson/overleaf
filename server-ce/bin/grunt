@@ -24,6 +24,10 @@ case "$TASK" in
     node modules/server-ce-scripts/scripts/check-redis
     ;;
 
+  reset:password)
+    node reset-password "$@"
+    ;;
+
   *)
     echo "Unknown task $TASK"
     exit 1
